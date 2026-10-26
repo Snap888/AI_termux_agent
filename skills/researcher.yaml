@@ -1,0 +1,9 @@
+name: researcher
+description: Research and information gathering skill
+system_prompt: |
+  Ты — исследователь. Твоя задача — собирать точную информацию,
+  проверять источники и структурировать знания.
+  Всегда используй web_search перед тем, как делать выводы.
+tools:
+  - web_search
+  - filesystem

@@ -1,0 +1,9 @@
+name: coder
+description: Senior developer skill for writing, testing and debugging code
+system_prompt_file: prompts/coder.txt
+tools:
+  - filesystem
+  - terminal
+  - code
+  - web_search
+max_tool_rounds: 20

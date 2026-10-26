@@ -1,0 +1,34 @@
+# AI Termux Agent Configuration
+
+model:
+  # provider: openai | ollama | llamacpp
+  provider: "openai"
+  base_url: "https://api.x.ai/v1"   # или https://api.openai.com/v1
+  api_key: "YOUR_API_KEY_HERE"
+  model_name: "grok-2"
+  temperature: 0.7
+  max_tokens: 4096
+
+local:
+  ollama_host: "http://127.0.0.1:11434"
+  ollama_model: "llama3.2"
+  llamacpp_host: "http://127.0.0.1:8080"
+
+agent:
+  max_tool_rounds: 12
+  working_directory: "."
+  system_prompt_file: "prompts/default_system.txt"
+  enable_web_search: true
+  enable_terminal: true
+
+gui:
+  theme: "dark"          # dark | light
+  appearance_mode: "System"
+  font_family: "Noto Sans"
+  font_size: 13
+  window_width: 1280
+  window_height: 800
+
+logging:
+  level: "INFO"
+  file: "logs/agent.log"
